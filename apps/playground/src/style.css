@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+
+
+@layer base {
+    .headroom {
+        will-change: transform; /* Optimize for animation */
+        transition: transform 0.5s ease-in-out; /* Smooth transition */
+        background: var(--color-neutral-900);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+    }
+
+    /* Styles when the element is pinned (visible) */
+    .headroom--pinned {
+        transform: translateY(0%);
+
+    }
+
+    /* Styles when the element is unpinned (hidden) */
+    .headroom--unpinned {
+        transform: translateY(-100%); /* Slide up and out of view */
+
+    }
+
+    /* Optional: Styles for when the page is at the very top */
+    .headroom--top {
+        /* Example: Add a shadow only when not at the top */
+        box-shadow: none;
+    }
+
+    .headroom--not-top {
+        @apply shadow-sm shadow-black;
+    }
+}

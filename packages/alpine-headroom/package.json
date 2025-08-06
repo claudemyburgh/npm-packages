@@ -1,0 +1,17 @@
+{
+  "name": "@designbycode/alpine-headroom",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/alpinejs": "^3.13.11",
+    "@types/bun": "latest",
+    "alpinejs": "^3.14.9",
+    "microbundle": "^0.15.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
