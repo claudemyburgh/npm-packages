@@ -55,6 +55,40 @@ Add the `x-headroom` directive to any element:
 * `tolerance` (number) scroll delta threshold to ignore small moves
 * `classes` (object) override default Tailwind CSS v4 class names
 
+```css
+
+    .headroom {
+        will-change: transform; /* Optimize for animation */
+        transition: transform 0.5s ease-in-out; /* Smooth transition */
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+    }
+
+    /* Styles when the element is pinned (visible) */
+    .headroom--pinned {
+        transform: translateY(0%);
+    }
+
+    /* Styles when the element is unpinned (hidden) */
+    .headroom--unpinned {
+        transform: translateY(-100%); /* Slide up and out of view */
+
+    }
+
+    /* Optional: Styles for when the page is at the very top */
+    .headroom--top {
+        /* Example: Add a shadow only when not at the top */
+        box-shadow: none;
+    }
+
+    .headroom--not-top {
+        @apply shadow-sm shadow-primary/25;
+    }
+```
+
 Use modifiers in the directive to apply `frozen` state at init:
 
 ```html

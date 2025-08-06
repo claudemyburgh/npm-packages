@@ -7,7 +7,7 @@ export default defineConfig({
         lib: {
             entry: resolve(__dirname, 'src/index.ts'),
             name: 'AlpineHeadroom',
-            fileName: 'alpine-headroom',
+            fileName: 'index',
         },
     },
     plugins: [dts()],
