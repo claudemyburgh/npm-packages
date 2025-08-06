@@ -58,11 +58,6 @@ function Headroom() {
                     element.classList.remove(...classes);
                 };
 
-                const toggleClasses = (element: HTMLElement, classString: string, force?: boolean) => {
-                    const classes = classString.trim().split(/\s+/).filter(cls => cls.length > 0);
-                    classes.forEach(cls => element.classList.toggle(cls, force));
-                };
-
                 // Parse options with better error handling
                 if (expression) {
                     try {
