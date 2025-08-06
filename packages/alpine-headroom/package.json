@@ -2,26 +2,35 @@
   "name": "@designbycode/alpine-headroom",
   "version": "1.0.0",
   "main": "dist/index.js",
-  "module": "dist/index.esm.js",
+  "module": "dist/index.umd.js",
   "source": "src/index.ts",
   "type": "module",
-  "private": true,
+  "private": false,
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
+  "files": ["dist"],
   "scripts": {
     "test": "vitest --ui",
     "test:run": "vitest run",
-    "build": "microbundle"
+    "build": "vite build"
   },
   "devDependencies": {
     "@types/alpinejs": "^3.13.11",
     "@types/bun": "latest",
     "@types/jsdom": "^21.1.7",
-    "@vitest/ui": "^2.0.5",
+    "@vitest/ui": "^2.1.9",
     "alpinejs": "^3.14.9",
-    "jsdom": "^25.0.0",
-    "microbundle": "^0.15.1",
-    "vitest": "^2.0.5"
+    "jsdom": "^25.0.1",
+    "vite": "latest",
+    "vite-plugin-dts": "latest",
+    "vitest": "^2.1.9"
   },
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "^5.9.2"
   }
 }
