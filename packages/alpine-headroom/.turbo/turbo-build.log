@@ -1,0 +1,22 @@
+$ microbundle
+rpt2: options error TS5089: [31mOption 'jsxFactory' cannot be specified when option 'jsx' is 'react-jsx'.[39m
+rpt2: options error TS5089: [31mOption 'jsxFragmentFactory' cannot be specified when option 'jsx' is 'react-jsx'.[39m
+rpt2: options error TS5096: [31mOption 'allowImportingTsExtensions' can only be used when either 'noEmit' or 'emitDeclarationOnly' is set.[39m
+rpt2: options error TS5089: [31mOption 'jsxFactory' cannot be specified when option 'jsx' is 'react-jsx'.[39m
+rpt2: options error TS5089: [31mOption 'jsxFragmentFactory' cannot be specified when option 'jsx' is 'react-jsx'.[39m
+rpt2: options error TS5096: [31mOption 'allowImportingTsExtensions' can only be used when either 'noEmit' or 'emitDeclarationOnly' is set.[39m
+rpt2: options error TS5089: [31mOption 'jsxFactory' cannot be specified when option 'jsx' is 'react-jsx'.[39m
+rpt2: options error TS5089: [31mOption 'jsxFragmentFactory' cannot be specified when option 'jsx' is 'react-jsx'.[39m
+rpt2: options error TS5096: [31mOption 'allowImportingTsExtensions' can only be used when either 'noEmit' or 'emitDeclarationOnly' is set.[39m
+rpt2: options error TS5089: [31mOption 'jsxFactory' cannot be specified when option 'jsx' is 'react-jsx'.[39m
+rpt2: options error TS5089: [31mOption 'jsxFragmentFactory' cannot be specified when option 'jsx' is 'react-jsx'.[39m
+rpt2: options error TS5096: [31mOption 'allowImportingTsExtensions' can only be used when either 'noEmit' or 'emitDeclarationOnly' is set.[39m
+Build "@designbycode/alpine-headroom" to dist:
+      16.1 kB: index.cjs.gz
+      14.6 kB: index.cjs.br
+      16.1 kB: index.modern.js.gz
+      14.5 kB: index.modern.js.br
+      16.1 kB: index.esm.js.gz
+      14.6 kB: index.esm.js.br
+      16.1 kB: index.umd.js.gz
+      14.6 kB: index.umd.js.br
