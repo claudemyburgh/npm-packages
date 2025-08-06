@@ -5,11 +5,19 @@
   "module": "dist/index.esm.js",
   "type": "module",
   "private": true,
+  "scripts": {
+    "test": "vitest --ui",
+    "test:run": "vitest run"
+  },
   "devDependencies": {
     "@types/alpinejs": "^3.13.11",
     "@types/bun": "latest",
+    "@types/jsdom": "^21.1.7",
+    "@vitest/ui": "^2.0.5",
     "alpinejs": "^3.14.9",
-    "microbundle": "^0.15.1"
+    "jsdom": "^25.0.0",
+    "microbundle": "^0.15.1",
+    "vitest": "^2.0.5"
   },
   "peerDependencies": {
     "typescript": "^5"

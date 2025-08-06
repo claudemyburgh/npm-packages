@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
     // Environment setup & latest features
+
+    "types": ["node", "jsdom"],
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "lib": ["ESNext", "DOM"],
     "target": "ESNext",
     "module": "Preserve",
